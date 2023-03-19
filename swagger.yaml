@@ -4,7 +4,7 @@ info:
   contact: {}
   version: '1.0'
 servers:
-- url: http://example.com/{v1Path}
+- url: https://nodejs-jobs-api.onrender.com/{v1Path}
   variables:
     v1Path:
       default: DefaultParameterValue
@@ -24,12 +24,12 @@ paths:
               allOf:
               - $ref: '#/components/schemas/RegisterUserRequest'
               - example:
-                  name: Test_User1
-                  email: john@gmail.com
+                  name: test_user1
+                  email: test_user1@gmail.com
                   password: secret
             example:
-              name: Test_User1
-              email: john@gmail.com
+              name: test_user1
+              email: test_user1@gmail.com
               password: secret
         required: true
       responses:
@@ -53,10 +53,10 @@ paths:
               allOf:
               - $ref: '#/components/schemas/LoginUserRequest'
               - example:
-                  email: test@gmail.com
+                  email: test_user1@gmail.com
                   password: secret
             example:
-              email: test@gmail.com
+              email: test_user1@gmail.com
               password: secret
         required: true
       responses:
